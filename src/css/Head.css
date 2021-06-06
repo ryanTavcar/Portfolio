@@ -1,0 +1,9 @@
+.head-container {
+    border: 1px solid red;
+    width: 100vw;
+    height: 50vh;
+}
+.profile-image {
+    width: 15rem;
+    height: 20rem;
+}
