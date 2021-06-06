@@ -1,5 +1,7 @@
+import {useState} from 'react';
 import "../css/Main.css";
 import { useMediaQuery } from 'react-responsive'
+import Navbar from './Navbar';
 
 function Main() {
 
@@ -11,13 +13,7 @@ function Main() {
         <div className="Main-container">
             {isTabletOrMobile &&
                 <>
-                    <nav className="Navbar">
-                        <ul className="Navbar-ul">
-                            <li className="Navbar-li">Projects</li>
-                            <li className="Navbar-li">About</li>
-                            <li className="Navbar-li">Socials</li>
-                        </ul>
-                    </nav>
+                    <Navbar/>
                 </>
             }
             {isDesktopOrLaptop &&
