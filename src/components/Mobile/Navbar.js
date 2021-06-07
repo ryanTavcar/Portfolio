@@ -15,6 +15,8 @@ function Navbar() {
     const [useNavbar, setNavbar] = useState({'display': 'none'})
     const [useToggle, setToggle] = useState(false)
 
+    const [useHeading, setHeading] = useState("my work.");
+
     const handleNavbarActive = () => {
         setNavbar({'display': 'block'})
         setToggle(true);
@@ -27,26 +29,33 @@ function Navbar() {
         return
     }
 
+    const changeHeading = (heading) => {
+        return setHeading(heading)
+    }
+
     return (
-        <>
+        <>  
+            <h3>{useHeading}</h3>
             <button onClick={useToggle? handleNavbarInactive : handleNavbarActive} >
                 <i className="fa fa-bars"></i> 
             </button>
 
             <Router>
+
                 <nav className="Navbar-mobile" style={useNavbar} >
                     <ul className="Navbar-ul-mobile">
-                        <li className="Navbar-li">
+                        <li className="Navbar-li" onClick={() => changeHeading('my work.')}>
                             <Link to="/">Projects</Link>
                         </li>
-                        <li className="Navbar-li">
+                        <li className="Navbar-li" onClick={() => changeHeading('about me.')}>
                             <Link to="/about">About</Link>
                         </li>
-                        <li className="Navbar-li">
+                        <li className="Navbar-li" onClick={() => changeHeading('my socials.')}>
                             <Link to="/socials">Socials</Link>
                         </li>
                     </ul>
                 </nav>
+
                 <Switch>
                         <Route exact path="/">
                             <Projects />

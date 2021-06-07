@@ -14,7 +14,7 @@ function App() {
   const isTabletDevice = useMediaQuery({ minWidth: 416, maxWidth: 1024 });
   const isLaptop = useMediaQuery({ minWidth: 1025, maxWidth: 1280 });
   const isDesktop = useMediaQuery({ minWidth: 1281, maxWidth: 1680 });
-  const isBigScreen = useMediaQuery({ minWidth: 1681, maxWidth:  2000 });
+  const isBigScreen = useMediaQuery({ minWidth: 1681, maxWidth:  2200 });
 
   return (
     <div className="App">

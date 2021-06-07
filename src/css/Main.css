@@ -1,12 +1,12 @@
 .Main-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
 }
 
 
 .Navbar {
-    border: 1px solid rgba(0, 0, 255, 0.378);
+    /* border: 1px solid rgba(0, 0, 255, 0.378); */
     display: flex;
     justify-content: center;
 }
@@ -21,7 +21,7 @@
 }
 
 .Navbar-mobile {
-    border: 1px solid rgba(0, 0, 255, 0.378);
+    /* border: 1px solid rgba(0, 0, 255, 0.378); */
     display: flex;
     justify-content: center;
     display: none;
@@ -30,4 +30,19 @@
 .Navbar-ul-mobile {
     display: flex;
     flex-direction: column;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 40px 50px 50px 40px;
+    grid-template-rows: 100px 100px;
+    width: inherit;
+    height: 90vh;
+    /* border: 1px solid red; */
+}
+
+.projects {
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid green;
 }
