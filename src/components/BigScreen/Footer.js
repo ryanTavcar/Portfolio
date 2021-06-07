@@ -1,9 +1,11 @@
-import "../css/Contact.css";
+import React from 'react'
 
-export default function Contact() {
+function Footer() {
     return (
         <div className="contact-container">
             <h2>Contact</h2>
         </div>
     )
 }
+
+export default Footer
