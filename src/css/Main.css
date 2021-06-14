@@ -1,9 +1,9 @@
 .Main-container {
-    /* border: 2px solid blue; */
-    width: 100vw;
-    height: 100vh;
+    border: 2px solid blue;
+    width: 100%;
+    height: auto;
+    
 }
-
 
 .Navbar {
     /* border: 1px solid rgba(0, 0, 255, 0.378); */

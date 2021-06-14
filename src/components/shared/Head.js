@@ -6,7 +6,7 @@ import image from '../../resources/profile.jpg';
 function Head() {
     return (
         <div className="head-container">
-            <h1>Desktop</h1>
+            <h1>hello.</h1>
             <img className="profile-image" src={image} alt='profile'/>
         </div>
     )
