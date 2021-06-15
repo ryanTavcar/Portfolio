@@ -1,8 +1,34 @@
-import React from 'react'
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
+//Stylesheet
+import '../css/Socials.css'
 
 function Socials() {
+
+    const github = (e) => {
+        window.location.assign('https://github.com/ryanTavcar/');
+    };
+
+    const linkedin = (e) => {
+        window.location.assign('https://www.linkedin.com/in/ryan-james-tavcar-9a642416a/');
+    };
+
     return (
-        <div>
+        <div className="social-wrapper">
+            <div onClick={github}>
+                <FaGithub size={60}/>
+            </div>
+            <div onClick={linkedin}>
+                <FaLinkedin size={60}/>
+            </div>
+            
         </div>
     )
 }

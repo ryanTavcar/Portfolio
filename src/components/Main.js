@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -18,8 +18,8 @@ import Navbar from './Navbar';
 
 function Main() {
 
-    const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 1024 });
-    const isLargeScreen = useMediaQuery({ minWidth: 1025, maxWidth: 3840 });
+    const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 800 });
+    const isLargeScreen = useMediaQuery({ minWidth: 801, maxWidth: 3840 });
 
     const [useNavbar, setNavbar] = useState({'display': 'none'})
     const [useToggle, setToggle] = useState(false)
@@ -41,15 +41,18 @@ function Main() {
         return setHeading(heading)
     }
 
+
     return (
         <div className="Main-container">
         
         {isSmallScreen && 
             <>
-                <h3>{useHeading}</h3>
-                <button onClick={useToggle? handleNavbarInactive : handleNavbarActive} >
-                    <i className="fa fa-bars"></i> 
-                </button>
+                <div className="hamburger-menu">
+                    <h3>{useHeading}</h3>
+                    <button onClick={useToggle? handleNavbarInactive : handleNavbarActive} >
+                        <i className="fa fa-bars"></i> 
+                    </button>
+                </div>
 
                 <Router>
 

@@ -4,12 +4,12 @@
     height: auto;
 }
 
-/* Laptop */
+/* Tablet */
 @media (min-width: 416px) and (max-width: 1024px) {
-    
+
 }
 
 /* Mobile */
 @media (min-width: 200px) and (max-width: 415px) {
-    
+
 }

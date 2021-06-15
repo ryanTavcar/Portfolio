@@ -178,7 +178,7 @@ span {
     }
 }
 
-/* Laptop */
+/* Tablet */
 @media (min-width: 416px) and (max-width: 1024px) {
     .wrapper {
         display: flex;
