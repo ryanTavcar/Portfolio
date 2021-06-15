@@ -1,11 +1,5 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 //Stylesheet
 import '../css/Socials.css'

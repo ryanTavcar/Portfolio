@@ -15,6 +15,9 @@ function HamburgerNavbar({changeHeading, useNavbar}) {
                 <li className="Navbar-li" onClick={() => changeHeading('about me.')}>
                     <NavLink to="/about" className="navbar-link-mobile" exact activeStyle={{textDecoration: 'underline'}} >About</NavLink>
                 </li>
+                <li className="Navbar-li" onClick={() => changeHeading('my resume.')}>
+                    <NavLink to="/resume" className="navbar-link-mobile" exact activeStyle={{textDecoration: 'underline'}} >Resume</NavLink>
+                </li>
                 <li className="Navbar-li" onClick={() => changeHeading('my socials.')}>
                     <NavLink to="/socials" className="navbar-link-mobile" exact activeStyle={{textDecoration: 'underline'}} >Socials</NavLink>
                 </li>

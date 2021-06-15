@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Head.css';
-import image from '../resources/profile.jpg';
+// import image from '../resources/profile.jpg';
 
 
 function Head() {

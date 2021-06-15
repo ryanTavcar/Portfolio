@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -15,7 +15,7 @@ import About from './About';
 import Socials from './Socials';
 import HamburgerNavbar from './HamburgerNavbar';
 import Navbar from './Navbar';
-
+import Resume from './Resume'
 function Main() {
 
     const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 800 });
@@ -65,6 +65,9 @@ function Main() {
                             <Route exact path="/about">
                                 <About />
                             </Route>
+                            <Route exact path="/resume">
+                                <Resume />
+                            </Route>
                             <Route exact path="/socials">
                                 <Socials />
                             </Route>
@@ -87,6 +90,9 @@ function Main() {
                         </Route>
                         <Route exact path="/about">
                             <About />
+                        </Route>
+                        <Route exact path="/resume">
+                            <Resume />
                         </Route>
                         <Route exact path="/socials">
                             <Socials />
