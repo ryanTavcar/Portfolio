@@ -1,0 +1,32 @@
+.about-wrapper {
+    padding: 2.5rem;
+}
+
+.subtext {
+    width: fit-content;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 4rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    position: relative;
+    left: 10vw;
+}
+
+.img-wrapper-content{
+    padding: 1rem;
+}
+
+.articles {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(1, minmax(10px, 150px));
+    grid-gap: 15px;
+}

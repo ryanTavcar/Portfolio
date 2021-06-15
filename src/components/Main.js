@@ -1,20 +1,25 @@
 import React, {useState} from 'react';
-import '../../css/Main.css';
-import Projects from './Projects';
-import About from './About';
-import Socials from './Socials';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 import { useMediaQuery } from 'react-responsive'
+
+//Stylesheet
+import '../css/Main.css';
+
+//Componenents
+import Projects from './Projects';
+import About from './About';
+import Socials from './Socials';
+import HamburgerNavbar from './HamburgerNavbar';
+import Navbar from './Navbar';
 
 function Main() {
 
     const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 1024 });
-    const isLargeScreen = useMediaQuery({ minWidth: 1025, maxWidth: 2200 });
+    const isLargeScreen = useMediaQuery({ minWidth: 1025, maxWidth: 3840 });
 
     const [useNavbar, setNavbar] = useState({'display': 'none'})
     const [useToggle, setToggle] = useState(false)
@@ -48,19 +53,7 @@ function Main() {
 
                 <Router>
 
-                    <nav className="Navbar-mobile" style={useNavbar} >
-                        <ul className="Navbar-ul-mobile">
-                            <li className="Navbar-li" onClick={() => changeHeading('my work.')}>
-                                <Link to="/">Projects</Link>
-                            </li>
-                            <li className="Navbar-li" onClick={() => changeHeading('about me.')}>
-                                <Link to="/about">About</Link>
-                            </li>
-                            <li className="Navbar-li" onClick={() => changeHeading('my socials.')}>
-                                <Link to="/socials">Socials</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <HamburgerNavbar useNavbar={useNavbar} changeHeading={changeHeading}/>
 
                     <Switch>
                             <Route exact path="/">
@@ -83,19 +76,7 @@ function Main() {
                 <h3>{useHeading}</h3>
                 <Router>
 
-                    <nav className="Navbar">
-                        <ul className="Navbar-ul">
-                            <li className="Navbar-li" onClick={() => changeHeading('my work.')}>
-                                <Link to="/">Pojects</Link>
-                            </li>
-                            <li className="Navbar-li" onClick={() => changeHeading('about me.')}>
-                                <Link to="/about">About</Link>
-                            </li>
-                            <li className="Navbar-li" onClick={() => changeHeading('my socials.')}>
-                                <Link to="/socials">Socials</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <Navbar changeHeading={changeHeading} />
 
                     <Switch>
                         <Route exact path="/" >

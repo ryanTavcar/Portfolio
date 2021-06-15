@@ -12,6 +12,7 @@
     overflow: hidden;
     border-radius: 3px;
     position: relative;
+    cursor: pointer;
 }
 
 [class^=item]::before {
@@ -138,6 +139,10 @@
     grid-column: 1 / span 1;
     grid-row: 5 / span 2;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+span {
+    display: none;
 }
 
 @-webkit-keyframes spin {

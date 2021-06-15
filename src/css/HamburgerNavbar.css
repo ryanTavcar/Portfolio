@@ -1,0 +1,11 @@
+.Navbar-mobile {
+    /* border: 1px solid rgba(0, 0, 255, 0.378); */
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.Navbar-ul-mobile {
+    display: flex;
+    flex-direction: column;
+}
