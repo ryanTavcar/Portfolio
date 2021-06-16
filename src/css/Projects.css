@@ -145,6 +145,36 @@ span {
     display: none;
 }
 
+
+.project-info-wrapper{
+    background-color: white;
+    width: 40vw;
+    height:20vh;
+    position: absolute;
+    z-index: 99;
+    animation-name: show;
+    animation-duration: .5s;
+}
+
+.project-info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info-text {
+    padding: 1rem;
+}
+
+.project-info-img{
+    width: 10vw;
+    height: 20vh;
+}
+
+@keyframes show {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 @-webkit-keyframes spin {
     from {
     transform: translate(-50%, -50%) rotate(0deg);

@@ -5,18 +5,17 @@ import resume from '../resources/RyanTavcarResume.pdf';
 function Resume() {
 
     const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
+    function onDocumentLoadSuccess() {
+        setNumPages(1);
     }
 
     return (
         <div>
             <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
+                <Page pageNumber={numPages} />
             </Document>
-            <p>Page {pageNumber} of {numPages}</p>
+
         </div>
     )
 }
