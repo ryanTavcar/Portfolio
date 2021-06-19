@@ -14,33 +14,23 @@ function ProjectItem({ title, url, classname, image }) {
 
     const [state, setState] = useState({ [classname]:false});
 
-    const [mouse, setMouse] = useState({ posX: null, posY: null });
-
     const externalURL = (e) => {
-        console.log(e)
-        const repo = e.target.children[1].lastChild.innerText;
-        window.location.assign(`https://github.com/ryanTavcar/${repo}`);
+        window.location.assign(`https://github.com/ryanTavcar/${url}`);
     }
 
-    function trueHover (e){
-
-        //Left Side
-        if ( (window.innerWidth / 2) > e.clientX ) {
-                setMouse({posX: e.pageX + 100, posY: e.pageY })
-                setState({[classname]: true})
-
-        // Right Side
-        } else if ( (window.innerWidth / 2)  < e.clientX ) {
-                setMouse({posX: e.pageX - 800, posY: e.pageY })
-                setState({[classname]: true})
-        }
+    const externalDemo = (e) => {
+        // window.location.assign(`https://github.com/ryanTavcar/${url}`);
     }
-    
-    function falseHover(e){
-        if (e.relatedTarget.className === 'wrapper' || e.target.classname !== classname || e.target.previousSibling.classname === 'project-info-wrapper') {
-            setState({[classname]: false})
-            setMouse({posX: null, posY: null})
-        }
+
+    const trueHover = (e) => {
+        // setState({[classname]: true})
+        // console.log(e)
+        setState({[classname]: true})
+
+    }
+
+    const falseHover = (e) => {
+        setState({[classname]: false})
     }
 
     return (
@@ -48,19 +38,25 @@ function ProjectItem({ title, url, classname, image }) {
         {isLargeScreen && 
             <>
                 {state[classname] &&
-                <ProjectInfo 
-                    mouse={mouse} 
-                    title={title}
-                    description={"At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"}
-                    image={image}
-                ></ProjectInfo> 
+                    <ProjectInfo 
+                        description={"At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"}
+                        image={image}
+                    ></ProjectInfo> 
                 }
 
-            <div className={classname} onClick={externalURL} onMouseEnter={trueHover} onMouseLeave={falseHover} >
+            <div className={classname} onClick={externalDemo} onMouseEnter={trueHover} onMouseLeave={falseHover}>
                 <img src={image} alt="project"></img>
                 <div className="meta">
-                    <h2>{title}</h2>
                     <span>{url}</span>
+                    <h2>{title}</h2>
+                    <ul className="cta-list">
+                        <li className="cta-item">
+                            <button onClick={externalURL} >code</button>
+                        </li>
+                        <li className="cta-item">
+                            <button onClick={externalDemo} >demo</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
             </>
@@ -68,13 +64,21 @@ function ProjectItem({ title, url, classname, image }) {
 
         {isSmallScreen && 
             <>
-                <div className={classname} onClick={externalURL} onMouseEnter={trueHover} onMouseLeave={falseHover} >
-                <img src={image} alt="project"></img>
-                <div className="meta">
-                    <h2>{title}</h2>
-                    <span>{url}</span>
+                <div className={classname} onClick={externalDemo} onMouseEnter={trueHover} onMouseLeave={falseHover}>
+                    <img src={image} alt="project"></img>
+                    <div className="meta">
+                        <span>{url}</span>
+                        <h2>{title}</h2>
+                        <ul className="cta-list">
+                            <li className="cta-item">
+                                <button onClick={externalURL} >code</button>
+                            </li>
+                            <li className="cta-item">
+                                <button onClick={externalDemo} >demo</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </>
         }
         </>

@@ -11,6 +11,8 @@ function Project() {
     return (
         <div className="wrapper">
 
+            <blockquote className="quote" cite="Radek sam w sobie">Nie chce mi się szukać dennego cytatu, który odmieni moje życie o 360 stopni.</blockquote>
+
             <ProjectItem 
                 title={"Callback Cats"}
                 url={'callback-cats'}
@@ -45,8 +47,6 @@ function Project() {
                 image={"https://cdn.stocksnap.io/img-thumbs/960w/EIB873F1MT.jpg"}
                 classname={'item05'}>
             </ProjectItem>
-
-            <blockquote className="quote" cite="Radek sam w sobie">Nie chce mi się szukać dennego cytatu, który odmieni moje życie o 360 stopni.</blockquote>
 
             <ProjectItem 
                 title={"Rails Marketplace App"}
