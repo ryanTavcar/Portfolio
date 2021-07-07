@@ -78,7 +78,7 @@ function ProjectItem({ title, url, classname, image }) {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> 
             </>
         }
         </>
