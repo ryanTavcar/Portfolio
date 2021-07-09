@@ -7,7 +7,7 @@ import '../css/Projects.css';
 //Componenents
 import ProjectInfo from './ProjectInfo'
 
-function ProjectItem({ title, url, classname, image }) {
+function ProjectItem({ title, url, classname, image, description}) {
 
     const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 1024 });
     const isLargeScreen = useMediaQuery({ minWidth: 1025, maxWidth: 3840 });
@@ -39,13 +39,13 @@ function ProjectItem({ title, url, classname, image }) {
             <>
                 {state[classname] &&
                     <ProjectInfo 
-                        description={"At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"}
+                        description={description}
                         image={image}
                     ></ProjectInfo> 
                 }
 
             <div className={classname} onClick={externalDemo} onMouseEnter={trueHover} onMouseLeave={falseHover}>
-                <img src={image} alt="project"></img>
+                <img src={image} alt="project" style={{height: '100%', width: '100%'}}></img>
                 <div className="meta">
                     <span>{url}</span>
                     <h2>{title}</h2>

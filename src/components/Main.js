@@ -16,6 +16,7 @@ import Socials from './Socials';
 import HamburgerNavbar from './HamburgerNavbar';
 import Navbar from './Navbar';
 import Resume from './Resume'
+
 function Main() {
 
     const isSmallScreen = useMediaQuery({ minWidth: 200, maxWidth: 800 });

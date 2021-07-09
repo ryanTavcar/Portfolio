@@ -15,7 +15,9 @@ function About() {
                 <div className="img-wrapper-content">
                     <h3>I'm Ryan Tavcar.</h3>
                     <p>
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
+                        I'm enthusiastic, focused and motivated Junior Developer seeking an opportunity to change careers to web industries by implementing concepts, 
+                        knowledge, and methodologies learnt thereby adding value for the organization. Excellent communication skills- both oral and written. 
+                        Flexible and adaptable to demands of changing work environments and technologies. Team player and also independently responsible.
                     </p>
                 </div>
             </div>
@@ -25,8 +27,9 @@ function About() {
                 <div className="card-articles">
                     <h3>Who Am I.</h3>
                     <p>
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
+                        I'm enthusiastic, focused and motivated Junior Developer seeking an opportunity to change careers to web industries by implementing concepts, 
+                        knowledge, and methodologies learnt thereby adding value for the organization. Excellent communication skills- both oral and written. 
+                        Flexible and adaptable to demands of changing work environments and technologies. Team player and also independently responsible.
                     </p>
                 </div>
                 

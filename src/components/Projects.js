@@ -15,17 +15,18 @@ function Project() {
     return (
         <div className="wrapper">
 
-            <blockquote className="quote" cite="Radek sam w sobie">Nie chce mi się szukać dennego cytatu, który odmieni moje życie o 360 stopni.</blockquote>
+            <blockquote className="quote" cite="Ralph Johnson">Before software can be reusable it first has to be usable.</blockquote>
 
             {
                 projectData.map( (item) => {
 
                     return <ProjectItem 
-                            key={item.classname}
-                            title={item.title}
-                            url={item.url}
-                            image={item.image}
-                            classname={item.classname} > 
+                                key={item.classname}
+                                title={item.title}
+                                url={item.url}
+                                image={item.image}
+                                description={item.description}
+                                classname={item.classname} >
                             </ProjectItem>
                 })
             }
