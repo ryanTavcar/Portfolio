@@ -27,9 +27,7 @@ function About() {
                 <div className="card-articles">
                     <h3>Who Am I.</h3>
                     <p>
-                        I'm enthusiastic, focused and motivated Junior Developer seeking an opportunity to change careers to web industries by implementing concepts, 
-                        knowledge, and methodologies learnt thereby adding value for the organization. Excellent communication skills- both oral and written. 
-                        Flexible and adaptable to demands of changing work environments and technologies. Team player and also independently responsible.
+                        I am currently finishing my final assignment at coderacademy.com, where i have undertaken a full-stack course. I am in the midst of leveling up my skill with NodeJS 
                     </p>
                 </div>
                 
@@ -39,7 +37,7 @@ function About() {
                     <p>
                         "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
                     </p>
-                </div>
+                </div> 
 
 
 

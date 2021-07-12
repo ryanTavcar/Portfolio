@@ -60,15 +60,17 @@
 
 /* Mobile */
 @media (min-width: 200px) and (max-width: 415px) {
+    body {
+        overflow-x: hidden;
+    }
     .head-container {
         padding-left: 3rem;
         height: fit-content;
     }
-
+    
     .heading-text {
         padding: 2rem;
         width: 70vw;
-        margin-bottom: 2rem;
     }
 
     .heading::before {
@@ -77,10 +79,17 @@
         color: rgba(211, 211, 211, 0.282);
         position: absolute;
         top: 20vh;
-        left: 12vw;
+        left: 10vw;
     }
 
     .profile-image {
         display: none;
+    }
+}
+
+@media  (min-width: 400px) and (max-width: 420px) {
+    .heading::before {
+        top: 15vh;
+
     }
 }

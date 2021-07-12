@@ -168,7 +168,7 @@ span {
         flex-direction: column;
     }
 
-    .items {
+    [class^=item] {
         margin-bottom: 1rem;
     }
 
@@ -184,7 +184,7 @@ span {
         flex-direction: column;
     }
 
-    .items {
+    [class^=item] {
         margin-bottom: 1rem;
     }
 

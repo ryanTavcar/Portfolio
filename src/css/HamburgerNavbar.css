@@ -4,6 +4,7 @@
     justify-content: space-between;
     /* border: 1px solid red; */
     padding: 0 1rem;
+    margin-top: 1.5rem;
 }
 
 button {
@@ -12,6 +13,7 @@ button {
     height: 30px;
     background-color: transparent;
     border: none;
+    color: black;
 }
 
 .Navbar-mobile {

@@ -9,7 +9,7 @@ const Navbar = ({changeHeading}) => {
         <nav className="Navbar">
             <ul className="Navbar-ul">
                 <li className="Navbar-li" onClick={() => changeHeading('my work.')}>
-                    <NavLink to="/" className="navbar-link" exact activeStyle={{textDecoration: 'underline'}}>Pojects</NavLink>
+                    <NavLink to="/" className="navbar-link" exact activeStyle={{textDecoration: 'underline'}}>Projects</NavLink>
                 </li>
                 <li className="Navbar-li" onClick={() => changeHeading('about me.')}>
                     <NavLink to="/about" className="navbar-link" exact activeStyle={{textDecoration: 'underline'}} >About</NavLink>
