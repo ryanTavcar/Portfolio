@@ -1,17 +1,20 @@
 import React from 'react';
-import '../css/Head.css';
-// import image from '../resources/profile.jpg';
-
+import '../css/head.scss';
+import video from '../resources/selectphoto.mp4';
+import ReactPlayer from "react-player";
+import headsvg from '../resources/portfolio-bg.svg';
 
 function Head() {
     return (
         <div className="head-container">
-            <div className="heading-text">
-                <h1 className="heading" >Hello</h1>
-                <p>Passionate, deeply motivated and intrigued guy about the world of computers and programming</p>
-            </div>
+            <h2 className="subheading">Web Developer </h2>
+            <h1 className="heading">Ryan Tavcar </h1>
+            <p className="text"> Deeply motivated and team focused guy all about the world of computers and programming</p>
             
-            <img className="profile-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt='profile'/>
+            {/* <div className="feature">
+                <h4>New Favourite feature - upload to s3 bucket</h4>
+                <ReactPlayer url={video} loop="true" playing="playing" />
+            </div> */}
         </div>
     )
 }

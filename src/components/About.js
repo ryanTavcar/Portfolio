@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/About.css'
+import image from '../resources/Profile.jpg';
 
 function About() {
     return (
@@ -11,7 +12,7 @@ function About() {
             </div>
 
             <div className="img-wrapper">
-                <img src="https://cdn.stocksnap.io/img-thumbs/960w/UDX1LKMGAH.jpg" alt="" width="200" height="300"></img>
+                <img src={image} alt="" width="350" height="300"></img>
                 <div className="img-wrapper-content">
                     <h3>I'm Ryan Tavcar.</h3>
                     <p>
@@ -35,7 +36,7 @@ function About() {
                 <div className="card-articles">
                     <h3>What Seperates Me From The Others.</h3>
                     <p>
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
+                        I'd say my camaraderie amongst any team I find myself in. I'm always eager to find myself working towards a common goal, as it usually leads to new and intruiging technology. I find this techological curiousity as a strength of mine because im always propelled to start engaging with it. This leads to my quick pickup of new frameworks and librrires.
                     </p>
                 </div> 
 
@@ -44,7 +45,7 @@ function About() {
                 <div className="card-articles">
                     <h3>Where I See Myself In 5 Years.</h3>
                     <p>
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
+                        In five years i hope to my in higher roles within a company, even taking on leadership roles. 
                     </p>
                 </div>
 
@@ -53,7 +54,7 @@ function About() {
                 <div className="card-articles">
                     <h3>What My Skills are.</h3>
                     <p>
-                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui, At vero eos et accusamus et iusto odio dignissimos ducimus qui"
+                        "My skills exist in"
                     </p>
                 </div>
 

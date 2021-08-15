@@ -14,9 +14,10 @@
 .img-wrapper {
     display: flex;
     flex-direction: row;
-    width: 40vw;
+    width: 50vw;
     position: relative;
     left: 10vw;
+    border: 1px solid black;
 }
 
 .img-wrapper-content{

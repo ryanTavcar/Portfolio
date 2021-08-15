@@ -1,0 +1,26 @@
+.Main-container {
+    /* border: 2px solid blue; */
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heading {
+        // border: 1px solid black;
+        // width: fit-content;
+        margin: 1rem;
+        font-size: 36px;
+        font-family:  'Ubuntu', sans-serif;
+    }
+}
+
+/* Tablet */
+@media (min-width: 416px) and (max-width: 1024px) {
+
+}
+
+/* Mobile */
+@media (min-width: 200px) and (max-width: 415px) {
+
+}

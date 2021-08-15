@@ -7,13 +7,13 @@ import {
 import { useMediaQuery } from 'react-responsive'
 
 //Stylesheet
-import '../css/Main.css';
+import '../css/main.scss';
 
 //Componenents
 import Projects from './Projects';
 import About from './About';
 import Socials from './Socials';
-import HamburgerNavbar from './HamburgerNavbar';
+import HamburgerNavbar from './HamburgerNavbar'; 
 import Navbar from './Navbar';
 import Resume from './Resume'
 
@@ -80,7 +80,7 @@ function Main() {
 
         {isLargeScreen &&
             <>
-                <h3>{useHeading}</h3>
+                <h3 className="heading">{useHeading}</h3>
                 <Router>
 
                     <Navbar changeHeading={changeHeading} />

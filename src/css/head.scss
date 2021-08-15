@@ -1,0 +1,113 @@
+.head-container {
+    padding-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #06523a;
+    background-image: url('../resources/portfolio-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+        // border: 1px solid black;
+        margin: 1rem;
+        color: #fff;
+        font-size: 108px;
+        font-family: prompt;
+    }
+    
+    .subheading {
+        color: #fff;
+        // border: 1px solid black;
+        font-family: prompt;
+    }
+    
+    .text {
+        color: #66face;
+        // border: 1px solid black;
+        padding: 1rem;
+        font-family: prompt;
+
+    }
+}
+
+
+
+
+.feature {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 20vw;
+    top: 20vh;
+}
+
+/* Large Tablet */
+@media (min-width: 801px) and (max-width: 1024px) {
+
+    .heading, span {
+        border-right: none;
+        animation: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 416px) and (max-width: 800px) {
+    .head-container {
+        padding-left: 1rem;
+    }
+    .heading, span {
+        border-right: none;
+        animation: none;
+    }
+}
+
+/* Mobile */
+@media (min-width: 200px) and (max-width: 415px) {
+    body {
+        overflow-x: hidden;
+    }
+    .head-container {
+        padding-left: 3rem;
+        height: fit-content;
+    }
+    
+    .heading-text {
+        padding: 2rem;
+        width: 70vw;
+    }
+
+    .heading, span {
+        border-right: none;
+        animation: none;
+    }
+
+    .heading-after {
+        font-size: 200px;
+    }
+
+    .profile-image {
+        display: none;
+    }
+}
+
+@media  (min-width: 400px) and (max-width: 420px) {
+    .heading::before {
+        top: 15vh;
+
+    }
+
+    .heading, span {
+        border-right: none;
+        animation: none;
+    }
+
+    .heading-after {
+        font-size: 170px;
+    }
+
+}
