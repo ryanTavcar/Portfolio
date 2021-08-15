@@ -126,6 +126,11 @@
 /* Mobile */
 @media (min-width: 200px) and (max-width: 415px) {
 
+    .project-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
     .card {
         // border: 0.1rem red solid;
         background-color: #fff;
@@ -136,7 +141,7 @@
         margin: 1rem;
         font-family: Prompt;
         overflow-y: scroll;
-        overflow-x: hidden;
+        // overflow-x: hidden;
       }
 
 }
