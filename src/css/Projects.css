@@ -14,6 +14,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 200px repeat(5, minmax(10px, 150px));
     grid-gap: 3px;
+    font-family: prompt;
 }
 
 [class^=item] {
@@ -181,7 +182,7 @@ span {
     height: 20vh;
 }
 
-/* Laptop
+/* Laptop */
 @media (min-width: 1250px) and (max-width: 1400px) {
     .project-info-wrapper {
         padding: 1rem 1rem
@@ -191,11 +192,11 @@ span {
         padding: 1rem;
         font-size: 1rem;
     }
-} */
+} 
 
 
 /* Tablet */
-/* @media (min-width: 416px) and (max-width: 1024px) {
+@media (min-width: 416px) and (max-width: 1024px) {
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -208,10 +209,10 @@ span {
     .quote {
         display: none;
     }
-} */
+}
 
 /* Mobile */
-/* @media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 415px) {
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -224,4 +225,4 @@ span {
     .quote {
         display: none;
     }
-} */
+}

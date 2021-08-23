@@ -1,14 +1,14 @@
+
 import React from 'react';
-import { Link } from 'react-router-dom'
-import Chip from '@material-ui/core/Chip';
+
 //Components
+import ProjectItem from './ProjectItem';
 
 //Stylesheet
-import '../css/project.scss';
+import '../css/Projects.css';
 
 // Data
 import projectData from '../resources/projectData'
-
 
 const badgeColor = (label) => {
     switch (label) {
@@ -39,46 +39,23 @@ const badgeColor = (label) => {
 
 function Project() {
 
-
     return (
-        <div className="project-wrapper">
+        <div className="wrapper">
 
-            {/* <blockquote className="quote" cite="Ralph Johnson">Before software can be reusable it first has to be usable.</blockquote> */}
+            <blockquote className="quote" cite="Ralph Johnson">Before software can be reusable it first has to be usable.</blockquote>
 
             {
-                projectData.map( (project) => (
-                    <ul className="card card-body">
-                        <li>
-                            <h2>{project.title}</h2>
-                            <div className="project-contents">
-                                <img src={project.image} alt={`${project.title} image`} height="200"></img>
-                                <div className="badge-text">
-                                    {project.label.map(label => (
-                                    <Chip 
-                                        label={label}
-                                        color='default'
-                                        className={`chip-badge  ${badgeColor(label)}`}
-                                        /> 
-                                ))}
-                                <p>{project.description}</p>
+                projectData.map( (item) => {
 
-                                <div className="project-url">
-                                    <p>Source code:</p>
-                                    <Link className="Link" to={{pathname: project.url}} target="_blank">{project.title}</Link>
-
-                                    {project.demo &&
-                                        <>
-                                            <p>Demo:</p>
-                                            <Link className="Link" to={{pathname: project.url}} target="_blank">{project.title}</Link>
-                                            
-                                        </>
-                                    }
-                                </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                ))
+                    return <ProjectItem 
+                                key={item.classname}
+                                title={item.title}
+                                url={item.url}
+                                image={item.image}
+                                description={item.description}
+                                classname={item.classname} >
+                            </ProjectItem>
+                })
             }
         </div>
     )
