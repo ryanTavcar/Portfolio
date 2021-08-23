@@ -8,7 +8,7 @@ import '../css/Projects.css';
 //Componenents
 import ProjectInfo from './ProjectInfo'
 
-function ProjectItem({ title, url, classname, image, description}) {
+function ProjectItem({ title, url, classname, image, description, label}) {
 
     const history = useHistory()
 
@@ -42,6 +42,7 @@ function ProjectItem({ title, url, classname, image, description}) {
             <>
                 {state[classname] &&
                     <ProjectInfo 
+                        label={label}
                         description={description}
                         image={image}
                     ></ProjectInfo> 

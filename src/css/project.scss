@@ -1,101 +1,53 @@
-.project-wrapper {
-    width: 100%;
-    height: auto;
-    
-    ul {
-        // border: 1px solid grey;
-        height: 35vh;
-        margin: 2rem;
-        padding: 1rem;
 
-        li {
-            list-style: none;
-            h2 {
-                font-family: prompt;
-            }
-            
-            .project-contents {
-                // border: 1px solid red;
-                padding: 1rem;
-                display: flex;
+.badge-text {
 
-                img {
-                    margin-right: 2rem;
-                }
-                
-                
-                .badge-text {
-                    
-                    .project-url {
-                        // border: 1px solid green;
-                        display: flex;
-                        margin-top: 1rem;
-
-                        p {
-                            margin-right: 1rem;
-                        }
-                        .Link {
-                            margin-right: 3rem;
-                        }
-                    }
-
-                    p {
-                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        font-size: 18px;
-                        
-                    }
-
-                    .chip-badge {
-                        color: white;
-                        width: auto;
-                        height: 1.5rem;
-                        margin-bottom: 1rem;     
-                        margin-right: .5rem; 
-                        
-                        .MuiChip-label {
-                            display: block;
-                            animation: none;
-                            border-right: none;
-                        }
-                    }
-
-
-                    .red {
-                        background-color: #ef5350;
-                    }
-                    .green {
-                        background-color: #66bb6a;
-                    }
-                    .yellow {
-                        background-color: #ffa726;
-                    }
-                    .teal {
-                        background-color: #26a69a;
-                    }
-                    .blue {
-                        background-color: #29b6f6;
-                    }
-                    .pink {
-                        background-color: #ec407a;
-                    }
-                    .deepOrange {
-                        background-color: #ff5722;
-                    }
-                    .deepPurple {
-                        background-color: #673ab7;
-                    }
-                    .deepRed {
-                        background-color: #aa2e25;
-                    }
-                    .cyan {
-                        background-color: #26c6da;
-                    }
-                }
-            
-            }
+    .chip-badge {
+        color: white;
+        width: auto;
+        height: 1.5rem;
+        margin-bottom: 1rem;     
+        margin-right: .5rem; 
+        
+        .MuiChip-label {
+            display: block;
+            animation: none;
+            border-right: none;
         }
     }
+
+
+    .red {
+        background-color: #ef5350;
+    }
+    .green {
+        background-color: #66bb6a;
+    }
+    .yellow {
+        background-color: #ffa726;
+    }
+    .teal {
+        background-color: #26a69a;
+    }
+    .blue {
+        background-color: #29b6f6;
+    }
+    .pink {
+        background-color: #ec407a;
+    }
+    .deepOrange {
+        background-color: #ff5722;
+    }
+    .deepPurple {
+        background-color: #673ab7;
+    }
+    .deepRed {
+        background-color: #aa2e25;
+    }
+    .cyan {
+        background-color: #26c6da;
+    }
 }
+            
 
 
 

@@ -10,32 +10,6 @@ import '../css/Projects.css';
 // Data
 import projectData from '../resources/projectData'
 
-const badgeColor = (label) => {
-    switch (label) {
-        case 'Redux':
-            return 'red';
-        case 'React':
-            return 'blue'
-        case 'Express':
-            return 'yellow'
-        case 'Nodejs':
-            return 'teal'
-        case 'MongoDB':
-            return 'green'
-        case 'Javascript':
-            return 'pink'
-        case 'PostgreSQL':
-            return 'deepOrange'
-        case 'Ruby on Rails':
-            return 'deepPurple'
-        case 'Ruby':
-            return 'deepRed'
-        case 'CSS':
-            return 'cyan'
-        default:
-            return
-    }
-}
 
 function Project() {
 
@@ -53,6 +27,7 @@ function Project() {
                                 url={item.url}
                                 image={item.image}
                                 description={item.description}
+                                label={item.label}
                                 classname={item.classname} >
                             </ProjectItem>
                 })
